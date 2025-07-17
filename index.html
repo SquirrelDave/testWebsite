@@ -2,13 +2,14 @@
 <html>
 
 <head>
-  <title>My First Website</title>
+  <title>WWW.tehwebsyte.com</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-  <h1>Hello, world!</h1>
-  <p>Welcome to my first web page.</p>
+  <h1>Welkom!</h1>
+  <p>Here I do the internet.</p>
 
   <div>
     <div style="width: 300px; margin: 0 auto; text-align: center;">
@@ -28,6 +29,18 @@
 
       <p id="numbr"></p>
     </div>
+    <div id="popup" class="popup-overlay" style="display: none;">
+      <div class="popup-content">
+        <h3>Custom Pop-up</h3>
+        <p id="popup-message"><iframe width="560" height="315"
+            src="https://www.youtube.com/embed/xvFZjo5PgG0?si=pgt20zToCCjGV03u" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </p>
+        <button onclick="closePopup()">Close</button>
+      </div>
+    </div>
+    <button onclick="showPopup('Video loaded!')">Show YouTube Pop-up</button>
   </div>
   <script src="script.js"></script>
 </body>
